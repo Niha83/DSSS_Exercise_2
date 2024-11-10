@@ -12,7 +12,7 @@ class TestMathGame(unittest.TestCase):
             rand_num = function_A(min_val, max_val)
             self.assertTrue(min_val <= rand_num <= max_val)
 
-    def test_elect_random_operator(self):
+    def test_solve_problem(self):
         """Test if the operator generated is one of the expected choices ('+', '-', '*')."""
         operators = {'+', '-', '*'}
         for _ in range(100):
@@ -22,12 +22,12 @@ class TestMathGame(unittest.TestCase):
     def test_function_C(self):
         """Test if the evaluate_expression function correctly creates and solves problems."""
         test_cases = [
-            (5, 2, '+', '5 + 2', 7),
-            (5, 2, '-', '5 - 2', 3),
-            (5, 2, '*', '5 * 2', 10),
-            (10, 3, '+', '10 + 3', 13),
-            (10, 3, '-', '10 - 3', 7),
-            (10, 3, '*', '10 * 3', 30),
+            (7, 2, '+', '7 + 2', 9),
+            (5, 3, '-', '5 - 3', 2),
+            (5, 5, '*', '5 * 5', 25),
+            (1, 3, '+', '1 + 3', 4),
+            (5, 1, '-', '5 - 1', 4),
+            (11, 3, '*', '11 * 3', 33),
         ]
 
         for num1, num2, operator, expected_problem, expected_answer in test_cases:
