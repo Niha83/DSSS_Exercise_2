@@ -1,7 +1,6 @@
 import unittest
 from math_quiz import generate_random_num, select_random_operator, solve_problem
 
-
 class TestMathGame(unittest.TestCase):
 
     def test_generate_random_num(self):
