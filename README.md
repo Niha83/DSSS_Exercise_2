@@ -3,6 +3,11 @@ A simple command-line math quiz game that generates random math problems and eva
 
 Run the following command to install: https://github.com/Niha83/DSSS_Exercise_2
 
+## Features
+Generates random arithmetic problems with addition, subtraction, and multiplication.
+Tracks the user’s score and provides feedback on each answer.
+Ends with a score summary.
+
 ## License
 
 This project is licensed under the MIT License.
